@@ -1,2 +1,2 @@
 # css
-CSS design rules
+typingman CSS theme
