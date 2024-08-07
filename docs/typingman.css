@@ -106,6 +106,7 @@ kbd {
     font-size: 0.9rem;
     box-shadow: 2px 2px 2px var(--color);
     margin: 0 2px;
+    text-wrap: nowrap;
 }
 
 code {
