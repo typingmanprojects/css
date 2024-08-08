@@ -168,25 +168,29 @@ a[type="button"]:active {
     opacity: 0.8;
 }
 
+a[href^="mailto:"],
+a[href^="tel:"],
+a[href^="sms:"] {
+    display: inline-flex;
+    align-items: center;
+}
+
 a[href^="mailto:"]:before {
     content: "\e158";
     font-family: "Material Symbols Outlined";
-    margin-right: 0.5rem;
-    padding: 0;
+    margin-right: 4px;
 }
 
 a[href^="tel:"]:before {
     content: "\e0b0";
     font-family: "Material Symbols Outlined";
-    margin-right: 0.5rem;
-    padding: 0;
+    margin-right: 4px;
 }
 
 a[href^="sms:"]:before {
     content: "\e625";
     font-family: "Material Symbols Outlined";
-    margin-right: 0.5rem;
-    padding: 0;
+    margin-right: 4px;
 }
 
 mark {
