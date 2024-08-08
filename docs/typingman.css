@@ -63,17 +63,6 @@ section {
     border-radius: 0.25rem;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-size: inherit;
-    font-family: "Rubik", sans-serif;
-    color: var(--color);
-}
-
 p {
     margin: 1rem 0;
 }
