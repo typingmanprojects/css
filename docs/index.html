@@ -7,7 +7,7 @@
             content="width=device-width, initial-scale=1.0, maximum-scale=5"
         />
         <meta name="description" content="Preview of our CSS design." />
-        <link rel="stylesheet" href="typingman.min.css" />
+        <link rel="stylesheet" href="typingman.css" />
         <link rel="shortcut icon" type="image/svg+xml" href="favicon.svg" />
     </head>
 
@@ -67,12 +67,6 @@
                     This is a section. As you can see, it's a section. Moreover,
                     it's a section. And, sections are great for grouping content
                     together.
-                </p>
-            </section>
-            <section shadow>
-                <p>
-                    Add <code>shadow</code> as an attribute to any element to
-                    give it a shadow.
                 </p>
             </section>
             <h3>Form elements</h3>
@@ -413,7 +407,65 @@
                 >.
             </p>
             <h3>Canvas</h3>
-            <canvas width="720" height="96"></canvas>
+            <canvas width="96" height="96"></canvas>
+            <p>This is just a boring yellow rectangle. Nothing to see here.</p>
+            <h3>Shortcuts</h3>
+            <p>
+                Here are several attributes that can be used as shortcuts for
+                common styles:
+            </p>
+            <h4>shadow</h4>
+            <section shadow>
+                Add a <code>shadow</code> attribute to an element to add shadow
+                to it.
+            </section>
+            <h4>scrollbar</h4>
+            <p>
+                Add a <code>scrollbar="hidden"</code> attribute to an element to
+                hide the scrollbar.
+            </p>
+            <pre style="text-wrap: wrap; height: 400px" scrollbar="hidden">
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus eu elit at purus maximus ornare. Nulla iaculis eget eros id sollicitudin. In elementum egestas nibh ut tempor. Phasellus pellentesque turpis eros. Maecenas gravida varius erat non ultricies. Vestibulum tincidunt vulputate rutrum. Sed enim urna, malesuada eu varius eget, facilisis a justo. Praesent vehicula sem sed odio cursus aliquet. Nunc magna purus, ultrices id urna sit amet, ultricies porta mauris. Cras quis nibh nulla. Nulla porta, neque consectetur dignissim euismod, massa augue accumsan dolor, ac tempus magna odio vitae velit. Pellentesque molestie lectus id est interdum facilisis. Morbi ornare velit ac lobortis tincidunt. Nunc consequat, mauris eget pharetra rhoncus, neque tortor tempus velit, in mattis augue dui sed diam. Maecenas ut imperdiet risus.
+
+Aliquam consequat congue facilisis. Cras aliquet augue diam. Nunc convallis molestie iaculis. Integer id maximus diam. Phasellus at vehicula augue. Nam dictum, tortor non porttitor malesuada, urna purus tempor arcu, eget consequat elit turpis in augue. Praesent eu accumsan eros. Vivamus gravida blandit velit a venenatis. Quisque at tortor ac lacus accumsan pharetra. Mauris porttitor egestas sem nec feugiat. Nullam dignissim metus vel nulla pharetra, et blandit erat bibendum. Ut sagittis nec lacus pulvinar imperdiet. Vivamus semper dignissim enim, et rutrum leo vehicula et. Vestibulum fringilla malesuada venenatis.
+
+In suscipit est ut efficitur dapibus. Curabitur pellentesque egestas metus. Nulla velit risus, porta eget convallis eu, tempor ac felis. Pellentesque feugiat tortor sed dui feugiat, eget venenatis nibh pulvinar. Integer euismod urna eget justo sodales, in tincidunt nisi eleifend. Nulla porta lacus ante, id vestibulum nibh commodo ut. Etiam vestibulum eleifend mauris vel malesuada. Duis id congue mauris. In aliquet, mauris id luctus efficitur, orci risus faucibus orci, sit amet maximus augue mauris sit amet quam. Fusce tincidunt pharetra fringilla. Suspendisse ac condimentum arcu. Cras ac facilisis lorem.
+
+Nam tempus dignissim risus, sit amet venenatis nibh accumsan vitae. Etiam id risus varius, faucibus eros vel, vestibulum orci. Nulla facilisi. Duis placerat vel ante vel ultrices. Fusce rhoncus augue a maximus semper. Nullam non imperdiet metus, eget consequat libero. Donec dui lectus, iaculis in orci sit amet, vestibulum porta ex. Proin sodales mollis mauris quis sagittis. Cras sit amet dignissim dolor. Praesent id faucibus augue, non ullamcorper enim. Aenean auctor urna eget odio condimentum, at aliquam quam dapibus. Nunc sit amet dui laoreet quam dapibus accumsan sit amet vitae nulla. Vestibulum at dictum orci, nec sagittis leo. Fusce mattis sagittis enim ac pretium.
+
+Suspendisse dignissim lacus nec nisl molestie pretium sed id nisl. Nam tempor volutpat tortor non sagittis. Integer sed semper nisl. Cras justo enim, molestie at ligula ac, malesuada rutrum ex. Integer mi orci, malesuada vel tristique vitae, venenatis sit amet orci. Pellentesque scelerisque tempus risus vitae dictum. Maecenas porttitor convallis purus, nec vehicula risus pulvinar sed. Suspendisse felis nisi, convallis sed fermentum porta, ultricies non nisl. Nunc consectetur felis vitae justo ultricies, quis imperdiet lectus venenatis.
+</pre
+            >
+            <h4>flex</h4>
+            <p>
+                Add a <code>flex="row"</code> attribute to a div to make it a
+                flex container with a row layout.
+            </p>
+            <div flex="row">
+                <div>Item</div>
+                &nbsp;
+                <div>Item</div>
+                &nbsp;
+                <div>Item</div>
+            </div>
+            <p>
+                Or add a <code>flex="column"</code> attribute to a div to make
+                it a flex container with a column layout.
+            </p>
+            <div flex="column">
+                <div>Item</div>
+                <div>Item</div>
+                <div>Item</div>
+            </div>
+            <h3>Final thoughts</h3>
+            <p>This is the end of the showcase. Thanks for checking it out!</p>
+            <a type="button" href="#">Go back to the top</a>
+            <footer>
+                <p>
+                    &copy; 2024
+                    <a href="https://www.typingman.com/">typingman</a>
+                </p>
+            </footer>
             <script>
                 const canvas = document.querySelector("canvas");
                 const ctx = canvas.getContext("2d");

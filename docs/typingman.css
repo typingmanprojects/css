@@ -10,6 +10,7 @@
     --highlight-color: #f7b500;
 }
 
+/* Shortcuts */
 *[shadow] {
     box-shadow:
         0 15px 35px 0 rgba(60, 66, 87, 0.08),
@@ -25,6 +26,16 @@
     scrollbar-width: none;
 }
 
+div[flex="row"] {
+    display: flex;
+}
+
+div[flex="column"] {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Global styles */
 html {
     height: 100vh;
     width: 100vw;
@@ -42,6 +53,10 @@ body {
     text-align: left;
     word-wrap: break-word;
     text-rendering: optimizeLegibility;
+}
+
+main > * {
+    display: block;
 }
 
 section {
@@ -131,6 +146,7 @@ a {
     font-style: normal;
     text-decoration: none;
     border-bottom: 3px solid #f7b500;
+    display: inline-block;
 }
 
 a:hover {
@@ -281,5 +297,10 @@ math {
 math[display="block"] {
     margin: 1rem 0;
     border: 1px solid #ccc;
+    border-radius: 0.25rem;
     background-color: white;
+}
+
+script {
+    display: none;
 }
